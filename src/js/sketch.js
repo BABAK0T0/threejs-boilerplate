@@ -41,6 +41,9 @@ export default class Sketch {
   }
 
   init() {
+    /**
+     * Camera
+     */
     this.camera = new THREE.PerspectiveCamera(
       70,
       this.width / this.height,
@@ -50,6 +53,9 @@ export default class Sketch {
 
     this.camera.position.z = 3;
 
+    /**
+     * Scene
+     */
     this.scene = new THREE.Scene();
 
     this.geometry = new THREE.BoxGeometry(1, 1, 1);
@@ -61,6 +67,9 @@ export default class Sketch {
 
     this.scene.add(this.mesh);
 
+    /**
+     * Renderer
+     */
     this.renderer = new THREE.WebGLRenderer({
       canvas: this.canvas,
       antialias: true,
