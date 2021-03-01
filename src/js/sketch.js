@@ -88,6 +88,7 @@ export default class Sketch {
     this.mesh.rotation.x = this.elapsedTime;
     this.mesh.rotation.y = this.elapsedTime;
 
+    // Update OrbitControls
     this.controls.update();
 
     this.renderer.render(this.scene, this.camera);
