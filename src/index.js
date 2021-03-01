@@ -2,10 +2,9 @@ import "./style.scss";
 import Sketch from "./js/sketch";
 import DebugPanel from "./js/debugPanel";
 
-// const logger = (msg) => {
-//   console.log(msg);
-// };
+const init = () => {
+  new Sketch();
+  new DebugPanel({ visibility: true });
+};
 
-// logger("coucou");
-new Sketch();
-new DebugPanel({ visibility: true });
+init();
